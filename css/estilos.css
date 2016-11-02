@@ -37,14 +37,15 @@ div {
     clear: both;
 }
 
-button {
+
+/**button {
     border-radius: 4px;
     background-color: #000aaa;
     color: #ffffff;
     padding: 5px 15px;
     border: none;
     cursor: pointer;
-}
+}*/
 
 textarea {
     resize: vertical;
