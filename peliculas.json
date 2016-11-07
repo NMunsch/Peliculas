@@ -12,6 +12,13 @@
             "director": "Kenn",
             "sinopsis": "Recrea los acontecimientos del famoso día D siguiendo el punto de vista de los dos contendientes, sea el de las fuerzas aliadas o el del ejército alemán.",
             "fecha": "1980"
+        },
+        {
+            "id": "5",
+            "titulo": "El",
+            "director": "Ke",
+            "sinopsis": "Sea el de las fuerzas aliadas o el del ejército alemán.",
+            "fecha": "2000"
         }
     ]
 }

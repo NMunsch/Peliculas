@@ -11,13 +11,6 @@ function initializeEvents() {
 }
 
 function primeracarga(data) {
-    console.log(data);
-    
-        // {clave:valor}
-        // Object.clave => valor
-        // {}; === new Object();
-        // var objeto = {};
-        // objeto.clave = "valor" === {clave:valor} 
     var tds = '<tr id="idpeli">';
     tds += '<td width="4%"><input type="checkbox" name="" id="check" value=""></td>';
     tds += '<td width="24%" id="titulopeli"></td>';
@@ -25,16 +18,18 @@ function primeracarga(data) {
     tds += '<td width="24%" id="sinopsispeli"></td>';
     tds += '<td width="24%" id="fechapeli"></td>';
     tds += '</tr>';
-    $("#tabla").append(tds);
-    $("#idpeli").attr("id", +data.peliculas[0].id);
-    $("#titulopeli").html(data.peliculas[0].titulo);
-    $("#directorpeli").html(data.peliculas[0].director);
-    $("#sinopsispeli").html(data.peliculas[0].sinopsis);
-    $("#fechapeli").html(data.peliculas[0].fecha);
+
+    for (i = 0; i < data.peliculas.length; i++) {
+        $("#tabla").append(tds);
+        $("#idpeli").attr("id", data.peliculas[i].id);
+        $("#" + data.peliculas[i].id + " #titulopeli").html(data.peliculas[i].titulo);
+        $("#" + data.peliculas[i].id + " #directorpeli").html(data.peliculas[i].director);
+        $("#" + data.peliculas[i].id + " #sinopsispeli").html(data.peliculas[i].sinopsis);
+        $("#" + data.peliculas[i].id + " #fechapeli").html(data.peliculas[i].fecha);
+    }
 }
 
 function borro() {
-    if ($('#check').prop('checked')) {
-        $("#1").remove("#1");
-    }
+    $('input:checkbox:checked').parents("tr").remove();
+
 }
