@@ -1,0 +1,24 @@
+{
+    "peliculas": [{
+            "id": "1",
+            "titulo": "El día más largo",
+            "director": "Ken Annakin",
+            "sinopsis": "Filme basado en uno de los episodios bélicos más importantes de la Segunda Guerra Mundial, el desembarco de Normandía. Recrea los acontecimientos del famoso día D siguiendo el punto de vista de los dos contendientes, sea el de las fuerzas aliadas o el del ejército alemán.",
+            "fecha": "1962"
+        },
+        {
+            "id": "2",
+            "titulo": "El día",
+            "director": "Kenn",
+            "sinopsis": "Recrea los acontecimientos del famoso día D siguiendo el punto de vista de los dos contendientes, sea el de las fuerzas aliadas o el del ejército alemán.",
+            "fecha": "1980"
+        },
+        {
+            "id": "5",
+            "titulo": "El",
+            "director": "Ke",
+            "sinopsis": "Sea el de las fuerzas aliadas o el del ejército alemán.",
+            "fecha": "2000"
+        }
+    ]
+}

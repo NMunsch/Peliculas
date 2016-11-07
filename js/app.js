@@ -29,7 +29,35 @@ function primeracarga(data) {
     }
 }
 
+
+/** $('#borrar').click(function() {
+    var id = $(this).attr('id');
+    alert(id);
+}); */
+
+
+
 function borro() {
+
+
+
+
+    var filaquequitar = $('input:checkbox:checked').parents("tr").attr('id');
+    console.log("esto busco:" + filaquequitar)
+
+
     $('input:checkbox:checked').parents("tr").remove();
 
+
+    /** $.ajax({
+        type: "DELETE",
+        dataType: "json",
+        url: "peliculas.json"
+    }).done(borramosjson); */
+
+
+}
+
+function borramosjson() {
+    console.log("hasta aqui he llegado")
 }
