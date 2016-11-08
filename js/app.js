@@ -8,6 +8,8 @@ function initializeEvents() {
         url: "peliculas.json"
     }).done(primeracarga);
     $("#borrar").click(borro);
+    $("#modificar").click(modifico);
+
 }
 
 function primeracarga(data) {
@@ -39,4 +41,11 @@ function borro() {
     console.log("hasta aqui he llegado");
 
     $.ajax('peliculas.json/peliculas/+filaquequitar', { method: 'DELETE' });
+}
+
+function modifico(data) {
+    var filamarcada = $('input:checkbox:checked').parents("tr").attr('id');
+    console.log("esto busco:" + filamarcada)
+        /** $("#campo-titulo").attr("value", data.peliculas[1].titulo); */
+
 }

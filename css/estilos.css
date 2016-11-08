@@ -50,3 +50,7 @@ div {
 textarea {
     resize: vertical;
 }
+
+.redBackground {
+    background-color: red;
+}
