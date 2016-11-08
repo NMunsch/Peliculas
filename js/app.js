@@ -29,11 +29,6 @@ function primeracarga(data) {
     }
 }
 
-/** $('#borrar').click(function() {
-    var id = $(this).attr('id');
-    alert(id);
-}); */
-
 function borro() {
 
     var filaquequitar = $('input:checkbox:checked').parents("tr").attr('id');
@@ -42,6 +37,6 @@ function borro() {
     $('input:checkbox:checked').parents("tr").remove();
 
     console.log("hasta aqui he llegado");
-    
+
     $.ajax('peliculas.json/peliculas/+filaquequitar', { method: 'DELETE' });
 }
